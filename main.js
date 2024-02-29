@@ -9,22 +9,22 @@ let secondNumber = +prompt('Please provide second number');
 let sumery = firstNumber + sign + secondNumber;
 
     switch (sign) {
-        case `*`:
-            result = firstNumber * secondNumber;
+        case sign = `*`:
+            sumery = firstNumber * secondNumber;
             break;
-        case `/`:
-            result = firstNumber / secondNumber;
+        case sign = `/`:
+            sumery = firstNumber / secondNumber;
             break;
-        case `-`:
-            result = firstNumber - secondNumber;
+        case sign = `-`:
+            sumery = firstNumber - secondNumber;
             break;
-        case `+`:
-            result = firstNumber + secondNumber;
+        case sign = `+`:
+            sumery = firstNumber + secondNumber;
             break;
         default:
             console.log(`Something is going wrong`);
     }
 
+ alert(`${firstNumber} ${sign} ${secondNumber} = ${sumery}`);
 
-    alert(`${firstNumber} ${sign} ${secondNumber} = ${sumery}`)
 
