@@ -1,12 +1,14 @@
-function deg(num, degree) {
-    if (degree === 0) {
-        return 1;
+function createSum() {
+    let total = 0;
+    function sum(num) {
+        total += num;
+        return total;
     }
-    return num * deg(num, degree - 1);
+    return sum;
 }
 
-let result = deg(2, 4);
-console.log(result);
+let sum = createSum();
 
-result = deg(3, 3);
-console.log(result);
+console.log(sum(3));
+console.log(sum(5));
+console.log(sum(20));
